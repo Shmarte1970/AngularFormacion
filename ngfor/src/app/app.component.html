@@ -1,0 +1,23 @@
+<div class="container mt-4">
+  <div class="row">
+    <h3>Listado de Estudiantes</h3>
+  </div>
+  <br>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nro</th>
+        <th>Nombre</th>
+        <th>Estado</th>
+      </tr>      
+    </thead>
+    <tbody>
+      <tr *ngFor="let estudiante of listEstudiantes; let i = index">
+        <td>{{ i+1 }}</td>
+        <td>{{estudiante.nombre}}</td>
+        <td>{{estudiante.estado}}</td>
+      </tr>
+        
+    </tbody>
+  </table>
+</div>
