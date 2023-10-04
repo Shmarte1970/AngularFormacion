@@ -168,6 +168,11 @@ img {
   vertical-align: middle;
   border-style: none; }
 
+.imgMida{
+  width: 250px;
+  height: 250px;
+}
+
 svg {
   overflow: hidden;
   vertical-align: middle; }
@@ -8166,7 +8171,12 @@ h1, h2, h3, h4, h5,
   line-height: 1.5;
   font-weight: 400;
   font-family: "Poppins", Arial, sans-serif;
-  color: #000; }
+  color: #000 }
+
+.h3Block{
+  font-weight: 700;
+  color:#8fabd0;
+}
 
 .ftco-section {
   padding: 7em 0; }
