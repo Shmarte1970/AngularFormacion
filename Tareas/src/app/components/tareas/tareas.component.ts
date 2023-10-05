@@ -30,4 +30,8 @@ export class TareasComponent implements OnInit {
     this.listaTareas.splice(index, 1);
   }
 
+  cambiarEstado(index: number, tarea: Tarea): void{
+    this.listaTareas[index].estado =!this.listaTareas[index].estado;
+  }
+
 }
