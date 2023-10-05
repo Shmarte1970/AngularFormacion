@@ -8,11 +8,22 @@ import { Tarea } from '../models/Tarea';
 })
 export class TareasComponent implements OnInit {
   listaTareas: Tarea[] = []
+  nombreTarea = '';
 
-
+  constructor() { }
 
   ngOnInit(): void {
+    
+  }
 
+  agregarTarea() {  
+
+    const tarea: Tarea ={
+      nombre: this.nombreTarea,
+      estado: false
+    }
+    this.listaTareas.push(tarea);
+    this.nombreTarea = '';
   }
 
 }
