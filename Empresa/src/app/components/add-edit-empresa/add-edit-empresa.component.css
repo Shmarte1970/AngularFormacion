@@ -1,0 +1,99 @@
+body {
+    background-color: #f0f8ff; /* Azul pastel */
+  }
+
+  .formulario {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #4169e1; /* Azul real */
+  }
+
+  .titulo{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #4169e1; /* Azul real */
+  }
+
+  .nombre-apellidos, .fechas, .categoria {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nombre-apellidos input {
+    width: 48%; /* Ancho 48% para cada campo de nombre y apellidos */
+  }
+
+.idCategoria{
+    width: 20%;
+}
+
+.catprof{
+    width: 80%;
+}
+
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"],
+  select,
+  input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #87ceeb; /* Azul cielo */
+    border-radius: 5px;
+  }
+
+  input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+  }
+
+  button {
+    background-color: #4169e1; /* Azul real */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #1e90ff; /* Azul medio */
+  }
+
+  #menu li >  {
+    font-size: 18px;
+    font-weight: blod;
+}
+
+
+#menu form > button {
+    font-size: 18px;
+    font-weight: blod;
+}
+
+
+.dropdown-item:hover{
+    background: tomato !important; 
+    color: white !important;
+}
+
+#exTab1 .tab-content {
+    color : rgb(12, 12, 12);
+    padding : 5px 15px;
+  }
+
+  #exTab1 .nav-tabs > li > button {
+    border-radius: 0;
+  }

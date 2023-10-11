@@ -1,0 +1,71 @@
+<div class="container mt-5 flex-column">
+
+    <div id="exTab1" class="content">
+       
+          <ul class="nav nav-tabs justify-content-center bg-light " id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="home" aria-selected="true">Gestion Personal</button>
+           
+                
+                <div class="formulario mt-2">
+                    <form>
+                      <label for="nombre">Nombre y Apellidos:</label>
+                      <div class="nombre-apellidos">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                      </div>
+                
+                      <label for="username">Username:</label>
+                      <input type="text" id="username" name="username" required>
+                
+                      <label for="fechaAlta">Fecha de Alta:</label>
+                      <div class="fechas">        
+                      <input type="date" id="fechaAlta" name="fechaAlta" required>      
+                      <input type="date" id="fechaBaja" name="fechaBaja">
+                      </div>
+                      
+                
+                      <label for="telefono">Teléfono:</label>
+                      <input type="tel" id="telefono" name="telefono" required>
+                
+                      <label for="idCategoria">ID de Categoría:</label>
+                      <div class="categoria">
+                        <input type="text" class="idCategoria" id="idCategoria" name="idCategoria" required>      
+                        <input type="text" class="catprof" id="categoriaProfesional" name="categoriaProfesional" required>
+                      </div>
+                
+                      <label for="idEspecialidad">ID de Especialidad:</label>
+                      <input type="text" id="idEspecialidad" name="idEspecialidad" required>
+                
+                      <label for="especialidad">Especialidad:</label>
+                      <input type="text" id="especialidad" name="especialidad" required>
+                
+                      <label for="activo">Activo:</label>
+                      <input type="checkbox" id="activo" name="activo">
+                
+                      <div>
+                        <button type="submit">Enviar</button>
+                      </div>
+                      
+                    </form>
+                  </div>
+     
+            
+            </li>
+            <!--
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="profile" aria-selected="false">Roles</button>
+              
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="contact" aria-selected="false"> Datos</button>
+            </li>-->
+          </ul>
+        
+          
+    </div>
+</div>
+
+
+
+
