@@ -5,3 +5,12 @@
 label{
     font-weight: 600px;
 }
+
+.btnAgregar{
+      display: flex;
+      justify-content: center;      
+}
+
+.card{
+    margin: 0px 40px;
+}
