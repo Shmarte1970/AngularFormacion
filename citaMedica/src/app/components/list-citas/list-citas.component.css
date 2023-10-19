@@ -1,3 +1,16 @@
 .card{
     margin: 0px 40px;
 }
+
+.btnAgregar{
+    display: flex;
+    justify-content: center;      
+}
+
+span{
+    font-weight: 600px;
+}
+
+.mleft{
+    margin-left: 12px;
+}
