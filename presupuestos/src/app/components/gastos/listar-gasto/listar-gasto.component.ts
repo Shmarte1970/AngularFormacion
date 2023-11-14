@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { PresupuestoService } from 'src/app/services/presupuesto.service';
 
+
 @Component({
   selector: 'app-listar-gasto',
   templateUrl: './listar-gasto.component.html',

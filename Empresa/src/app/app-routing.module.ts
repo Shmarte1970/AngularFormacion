@@ -7,7 +7,7 @@ import { AddEditEmpresaComponent } from './components/add-edit-empresa/add-edit-
 
 const routes: Routes = [
     {path: '', component: AddEditEmpresaComponent},
-    {path:`**`, redirectTo: '', patMatch: 'full'},
+    {path:`**`, redirectTo: '', pathMatch: 'full'},
 ];
 
 @NgModule({
