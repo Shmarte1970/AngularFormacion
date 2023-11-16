@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,7 +16,6 @@ import { ContratosComponent } from './contratos/contratos.component';
 import { ProductosComponent } from './productos/productos.component';
 import { AlmacenesComponent } from './almacenes/almacenes.component';
 import { FacturacionComponent } from './facturacion/facturacion.component';
-import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +29,12 @@ import { HeaderComponent } from './header/header.component';
     ContratosComponent,
     ProductosComponent,
     AlmacenesComponent,
-    FacturacionComponent,
-    HeaderComponent   
+    FacturacionComponent   
 
   ],
   imports: [
     BrowserModule,
-  
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],
