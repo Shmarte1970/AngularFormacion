@@ -16,6 +16,8 @@ import { ContratosComponent } from './contratos/contratos.component';
 import { ProductosComponent } from './productos/productos.component';
 import { AlmacenesComponent } from './almacenes/almacenes.component';
 import { FacturacionComponent } from './facturacion/facturacion.component';
+import { SublevelMenuComponent } from './sidenav/sublevel-menu.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { FacturacionComponent } from './facturacion/facturacion.component';
     ContratosComponent,
     ProductosComponent,
     AlmacenesComponent,
-    FacturacionComponent   
+    FacturacionComponent,
+    SublevelMenuComponent,
+     
 
   ],
   imports: [
