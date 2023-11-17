@@ -9,6 +9,7 @@ import { ClimaService } from 'src/app/services/clima.service';
 export class DashboardComponent implements OnInit{
 
   urlImagen = "https://cdn-icons-png.flaticon.com/512/1116/1116453.png";
+
   ciudad = '';
   temperatura = 0;
   humedad = 0;
@@ -16,6 +17,7 @@ export class DashboardComponent implements OnInit{
   query = false;
   loading = false;
   mostrarError = false;
+  hora = Date;
 
  
 
@@ -25,15 +27,19 @@ export class DashboardComponent implements OnInit{
     
   }
 
+  
+
   obtenerClima(){
     this.query = false;
     this.loading = true;    
     this._climaService.getClima(this.ciudad).subscribe(data => {
+      console.log(data);
       this.loading = false;
       this.query = true;
       this.temperatura = data.main.temp - 273
       this.humedad = data.main.humidity
       this.clima = data.weather[0].main
+      console.log(data)
     },error =>{
       this.loading = false;
       this.error();

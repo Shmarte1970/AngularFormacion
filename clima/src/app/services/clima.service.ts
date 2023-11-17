@@ -20,4 +20,8 @@ export class ClimaService {
     const URL = this.url + this.key +'&q='+ciudad;
     return this.http.get(URL)
   }
+
+
+
 }
+
