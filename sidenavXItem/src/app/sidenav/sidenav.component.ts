@@ -1,7 +1,7 @@
 import { Component, EventEmitter, HostListener, OnInit, Output } from '@angular/core';
 import { navbarData } from './nav-data';
-import { animate, animation, keyframes, style, transition, trigger } from '@angular/animations';
-import { INavbarData } from './helper';
+import { animate, keyframes, style, transition, trigger } from '@angular/animations';
+import { INavbarData, fadeInOut} from './helper';
 
 interface SideNavToggle {
   screenWidht: number;
@@ -12,21 +12,9 @@ interface SideNavToggle {
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.css'],
-  animations: [
-    trigger('fadeInOut', [
-      transition(':enter', [
-        style({opacity: 0}),
-        animate ('350ms',
-          style({opacity: 1}),
-        )
-      ]),
-      transition(':leave', [
-        style({opacity: 1}),
-        animate ('350ms',
-          style({opacity: 0}),
-        )
-      ])
-    ]),
+  animations: [  
+    fadeInOut,
+ 
     trigger ('rotate', [
       transition(':enter',[
         animate('1000ms',
@@ -61,6 +49,7 @@ export class SidenavComponent  implements OnInit {
     }
   }
 
+ 
 
   ngOnInit(): void {
     this.screenWidht = window.innerWidth
@@ -90,5 +79,7 @@ export class SidenavComponent  implements OnInit {
     item.expanded = !item.expanded
 
   }
+
+
 
 }

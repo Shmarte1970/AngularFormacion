@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './empresas.component.html',
   styleUrls: ['./empresas.component.css']
 })
+
 export class EmpresasComponent {
 
 }
