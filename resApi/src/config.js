@@ -1,5 +1,7 @@
+require("dotenv").config();
+
 module.exports = {
   app: {
-    port: process.nextTick.PORT || 31537,
+    port: process.env.PORT,
   },
 };
