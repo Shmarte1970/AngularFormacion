@@ -1,15 +1,13 @@
 const express = require("express");
 
-const app = express();
-
 const config = require("./config.js");
 
-//const config = {
-//app: {
-//port: process.env.PORT || 4000,
-// },
-// };
+const clientes = require("./modulos/clientes/rutas");
+
+const app = express();
 
 app.set("port", config.app.port);
+
+app.use("/api/clientes", clientes);
 
 module.exports = app;
