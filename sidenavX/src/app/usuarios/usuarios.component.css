@@ -1,0 +1,21 @@
+@media (max-width:750px){
+    .orden {
+        display: none;
+    }
+}
+
+@media (max-width:600px){
+    .estado {
+        display: none;
+    }
+
+    .fech {
+        display: none;
+    }
+}
+
+@media (max-width:490px){
+    .correo {
+        display: none;
+    }
+}
