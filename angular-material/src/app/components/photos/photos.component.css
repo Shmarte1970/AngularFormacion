@@ -1,0 +1,24 @@
+img{
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    
+}
+
+mat-card{
+    margin: 2rem;
+}
+
+mat-card-content { 
+    margin: auto;
+    display: block;
+    margin-top: 2rem;
+}
+
+
+.centrado {
+    margin: auto;
+    align-items:center;
+}
+
+

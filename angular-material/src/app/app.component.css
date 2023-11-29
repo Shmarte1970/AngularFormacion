@@ -1,0 +1,30 @@
+main {
+    width: 100%;    
+    margin-top: 2rem;
+    text-align: center;
+}
+
+mat-card  {
+    margin: auto;
+    width: 35%;
+    display: block;
+    margin-top: 2rem;
+}
+
+mat-toolbar {
+    height: 35px;
+    margin:auto;
+    display: block;    
+    text-align: center;    
+}
+
+mat-form-field, input {
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    margin-top: 2rem;
+    align-items: center;
+}
+
