@@ -2,6 +2,7 @@ export interface Dato {
     id?:number;
     name: string;
     username:string;
-    mail:string;
+    email:string;
     phone:string;
+    website:string;
 }

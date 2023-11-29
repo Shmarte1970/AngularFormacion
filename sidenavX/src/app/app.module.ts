@@ -18,6 +18,7 @@ import { ProductosComponent } from './productos/productos.component';
 import { AlmacenesComponent } from './almacenes/almacenes.component';
 import { FacturacionComponent } from './facturacion/facturacion.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { FacturacionComponent } from './facturacion/facturacion.component';
     ProductosComponent,
     AlmacenesComponent,
     FacturacionComponent
+
     
 
   ],

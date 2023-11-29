@@ -1,4 +1,4 @@
-<div>
+<div >
   <div class="card-head">
     <div class="car-body">
       <div class="text-center mb3">
@@ -14,41 +14,21 @@
         <thead class="table-light">
           <tr>
             <th class="orden">#</th>
-            <th class="fech">Fecha</th>
-            <th>Nombre Usuario</th>
+            <th class="nombre">Nombre</th>
+            <th class="nomuser">Nombre Usuario</th>
             <th class="correo">Email</th>
-            <th>Phone</th>
-            <th class="estado">Estado</th>
+            <th class="phon">Telefono</th>
+            <th class="web" >Web</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody *ngFor="let dato of datos">
           <tr>
-            <td class="orden">1</td>
-            <td class="fech">15/11/2023</td>
-            <td>Estrella Castillejos</td>
-            <td class="correo">Castillejos@gmail.com</td>
-            <td>xxx-xx-xx-xx</td>
-            <td class="estado">Activo</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td class="orden">2</td>
-            <td class="fech">15/11/2023</td>
-            <td>Nuria Tarradellas</td>
-            <td class="correo">NTarradellas@gmail.com</td>
-            <td>xxx-xx-xx-xx</td>
-            <td class="estado">Activo</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td class="orden">3</td>
-            <td class="fech">01/11/2023</td>
-            <td>Luisa Padilla</td>
-            <td class="correo">LPadillas@gmail.com</td>
-            <td>xxx-xx-xx-xx</td>
-            <td class="estado">Activo</td>
+            <td class = "orden">{{dato.id}}</td>
+            <td class = "nombre">{{dato.name}}</td>            
+            <td class = "nomuser">{{dato.username}}</td>         
+            <td class = "correo">{{dato.email}}</td>
+            <td class = "phon">{{dato.phone}}</td>
+            <td class = "web">{{dato.website}}</td>
           </tr>
         </tbody>
       </table>
