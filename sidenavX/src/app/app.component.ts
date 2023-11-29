@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DatosService } from './services/datos.service';
+
+
 
 interface SideNavToggle {
   screenWidht: number;
@@ -13,8 +16,20 @@ interface SideNavToggle {
 })
 
 
-export class AppComponent {
-  title = 'sidenav';
+export class AppComponent implements OnInit {
+
+  
+
+ 
+
+  ngOnInit(): void {
+   
+   
+
+  }
+
+
+  title = 'Nav Zarca';
 
   isSideNavCollapsed = false;
   screenWidth = 0;
@@ -24,4 +39,6 @@ export class AppComponent {
     this.isSideNavCollapsed = data.collapsed;
 
   }
+
+
 }

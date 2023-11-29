@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HttpClientModule} from '@angular/common/http';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -29,13 +30,15 @@ import { FacturacionComponent } from './facturacion/facturacion.component';
     ContratosComponent,
     ProductosComponent,
     AlmacenesComponent,
-    FacturacionComponent   
+    FacturacionComponent
+    
 
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule   
   ],
   providers: [],
   bootstrap: [AppComponent]
