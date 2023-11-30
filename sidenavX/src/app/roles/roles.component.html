@@ -2,13 +2,48 @@
 <div class="card">
     <div class="card-head">
         <div class="card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nulla similique soluta dolores qui, 
-            saepe animi dignissimos recusandae hic mollitia inventore adipisci a quidem aliquid eveniet, ab vitae incidunt. 
-            Qui!
+            <div class="text-center mb3">
+                <button
+          type="button"
+          class="btn btn-outline-primary btn-lg btn-blog mt-3 mb-3"
+          (click)="btnNewUsuarios()"
+        >
+          Nuevo Rol
+        </button>
+            </div>  
+            <table class="table">
+                <thead class="table-light">
+                  <tr>
+                    <th class="usrId">userId</th>
+                    <th class="id">#</th>
+                    <th class="title">Tarea</th>
+                    <th class="comple">Completado</th>
+                    
+                  </tr>
+                </thead>
+                <tbody *ngFor="let rol of roles">
+                  <tr>
+                    <td class = "usrId">{{rol.userId}}</td>
+                    <td class = "id">{{rol.id}}</td>            
+                    <td class = "title">{{rol.title}}</td>         
+                    <td class = "comple">{{rol.completed}}</td>                  
+                  </tr>
+                </tbody>
+              </table>
+              <div class="d-flex align-items-start flex-column mb-3">
+                <div class="me-auto p-2">
+                  <button class="btn btn-outline-secondary" (click)="btnEditUsuario()" style="margin: 10px">
+                    Editar
+                  </button>
+                  <button class="btn btn-outline-danger" (click)="btnBorrar()">Eliminar</button>
+                </div>
+              </div>         
         </div>
     </div>
 </div>
-<div class="card">
+
+
+<!--<div class="card">
     <div class="card-head">
         <div class="card-body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nulla similique soluta dolores qui, 
@@ -16,4 +51,4 @@
             Qui!
         </div>
     </div>
-</div>
+</div>-->

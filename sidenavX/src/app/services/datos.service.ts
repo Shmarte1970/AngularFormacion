@@ -6,7 +6,6 @@ import { Dato } from '../models/datos';
   providedIn: 'root'
 })
 
-
 export class DatosService {
 
   constructor(private http: HttpClient) { }

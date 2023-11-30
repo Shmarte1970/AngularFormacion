@@ -33,7 +33,7 @@ export class UsuariosComponent implements OnInit {
     , err => console.log(err))   
     
   }
-
+  
   btnBorrar(){
     this.toastr.warning('Pulsastes Borrar 😒');
   }
@@ -46,9 +46,7 @@ export class UsuariosComponent implements OnInit {
     this.toastr.info('Editar Usuario 😎')
 
   }
-     
-
+    
+}
  
 
-  
-}
