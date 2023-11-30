@@ -5,12 +5,13 @@
         <button
           type="button"
           class="btn btn-outline-primary btn-lg btn-blog mt-3 mb-3"
+          (click)="btnNewUsuarios()"
         >
           Nuevo Usuario
         </button>
       </div>
 
-      <table class=" table">
+      <table class="table">
         <thead class="table-light">
           <tr>
             <th class="orden">#</th>
@@ -34,10 +35,10 @@
       </table>
       <div class="d-flex align-items-start flex-column mb-3">
         <div class="me-auto p-2">
-          <button class="btn btn-outline-secondary" style="margin: 10px">
+          <button class="btn btn-outline-secondary" (click)="btnEditUsuario()" style="margin: 10px">
             Editar
           </button>
-          <button class="btn btn-outline-danger">Eliminar</button>
+          <button class="btn btn-outline-danger" (click)="btnBorrar()">Eliminar</button>
         </div>
       </div>
     </div>

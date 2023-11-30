@@ -17,6 +17,9 @@ import { ContratosComponent } from './contratos/contratos.component';
 import { ProductosComponent } from './productos/productos.component';
 import { AlmacenesComponent } from './almacenes/almacenes.component';
 import { FacturacionComponent } from './facturacion/facturacion.component';
+import { ToastrModule } from 'ngx-toastr';
+
+
 
 
 @NgModule({
@@ -39,10 +42,20 @@ import { FacturacionComponent } from './facturacion/facturacion.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut: 1500,
+    }),
     AppRoutingModule,
-    HttpClientModule   
+    HttpClientModule, 
+    
+   
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+function forRoot(arg0: { timeOut: number; positionClass: string; }): any[] | import("@angular/core").Type<any> | import("@angular/core").ModuleWithProviders<{}> {
+  throw new Error('Function not implemented.');
+}
+

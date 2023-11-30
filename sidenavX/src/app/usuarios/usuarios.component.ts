@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { DatosService } from '../services/datos.service';
 import { Dato } from '../models/datos';
+import { ToastrService } from 'ngx-toastr';
+
+
 
 
 @Component({
@@ -11,8 +14,10 @@ import { Dato } from '../models/datos';
 export class UsuariosComponent implements OnInit {
 
   datos: Dato[] = [];
+
  
-  constructor(public datosService: DatosService) {
+ 
+  constructor(public datosService: DatosService, private toastr:ToastrService) {
 
   }
 
@@ -25,10 +30,25 @@ export class UsuariosComponent implements OnInit {
       this.datos = datos;
 
     }
-    , err => console.log(err))
-
-   
+    , err => console.log(err))   
     
   }
 
+  btnBorrar(){
+    this.toastr.warning('Pulsastes Borrar 😒');
+  }
+
+  btnNewUsuarios(){
+     this.toastr.success('Añadir un usuario 😄')
+    }
+
+  btnEditUsuario(){
+    this.toastr.info('Editar Usuario 😎')
+
+  }
+     
+
+ 
+
+  
 }
