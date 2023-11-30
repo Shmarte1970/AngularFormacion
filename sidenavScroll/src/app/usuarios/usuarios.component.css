@@ -1,0 +1,40 @@
+@media (max-width:1000px){
+    .web {
+        display: none;
+    }
+}
+
+@media (max-width:950px){
+    .orden {
+        display: none;
+    }
+
+    .correo {
+        display: none;
+    }
+}
+
+@media (max-width:700px){
+    .nomuser {
+        display: none;
+    }
+}
+
+
+@media (max-width: 500px){
+    .nombre {
+        display: none;
+    }
+
+    .nomuser{
+        display: contents;
+        font-size: 14px;
+        
+
+    }
+
+    .phon{
+        display: contents;
+        font-size: 14px;
+    }    
+}

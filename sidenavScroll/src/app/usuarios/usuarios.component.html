@@ -1,0 +1,47 @@
+<h1>Usuarios</h1>
+<div class="card">
+  <div class="card-head">
+    <div class="car-body">
+      <div class="text-center justi mb3">
+        <button
+          type="button"
+          class="btn btn-outline-primary btn-lg btn-blog mt-3 mb-3"
+          (click)="btnNewUsuarios()"
+        >
+          Nuevo Usuario
+        </button>
+      </div>
+
+      <table class="table">
+        <thead class="table-light">
+          <tr>
+            <th class="orden">#</th>
+            <th class="nombre">Nombre</th>
+            <th class="nomuser">Nombre Usuario</th>
+            <th class="correo">Email</th>
+            <th class="phon">Telefono</th>
+            <th class="web" >Web</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let dato of datos">
+          <tr>
+            <td class = "orden">{{dato.id}}</td>
+            <td class = "nombre">{{dato.name}}</td>            
+            <td class = "nomuser">{{dato.username}}</td>         
+            <td class = "correo">{{dato.email}}</td>
+            <td class = "phon">{{dato.phone}}</td>
+            <td class = "web">{{dato.website}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="d-flex align-items-start flex-column mb-3">
+        <div class="ms-auto p-2">
+          <button class="btn btn-outline-secondary" (click)="btnEditUsuario()" style="margin: 10px">
+            Editar
+          </button>
+          <button class=" btn btn-outline-danger" (click)="btnBorrar()">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

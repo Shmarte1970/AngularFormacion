@@ -1,0 +1,25 @@
+.scroll-ele {
+    height: 400px;
+    overflow-y: scroll;
+
+}
+
+
+
+@media (max-width:1000px){
+    .usrId {
+        display: none;
+    }
+}
+
+@media (max-width:870px){
+    .comple {
+        display: none;
+    }
+}
+
+@media (max-width:385px){
+    .id {
+        display: none;
+    }
+}

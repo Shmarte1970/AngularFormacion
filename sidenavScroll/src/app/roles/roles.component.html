@@ -1,0 +1,56 @@
+<h1>Roles</h1>
+<div class="card">
+  <div class="card-head">
+    <div class="card-body">
+      <div class="text-center justi mb3">
+        <button
+          type="button"
+          class="btn btn-outline-primary btn-lg btn-blog mt-3 mb-3"
+          (click)="btnNewUsuarios()"
+        >
+          Nuevo Rol
+        </button>
+      </div>
+   
+      <table class="table">
+        <thead class="table-light">
+          <tr>
+            <th class="usrId">userId</th>
+            <th class="id">#</th>
+            <th class="title">Tarea</th>
+            <th class="comple">Completado</th>
+          </tr>
+        </thead>
+      </table>
+   
+      <div class="scroll-ele">
+      <table class="table" style="position: sticky; top: 0; text-align: left;">
+          <tbody *ngFor="let rol of roles">
+            <tr>
+              <td class="usrId">{{ rol.userId }}</td>
+              <td class="id">{{ rol.id }}</td>
+              <td class="title">{{ rol.title }}</td>
+              <td class="comple">{{ rol.completed }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="d-flex align-items-start flex-column mb-3">
+        <div class="ms-auto p-2">
+          <button
+            class="btn btn-outline-secondary"
+            (click)="btnEditUsuario()"
+            style="margin: 10px"
+          >
+            Editar
+          </button>
+          <button class="btn btn-outline-danger" (click)="btnBorrar()">
+            Eliminar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
