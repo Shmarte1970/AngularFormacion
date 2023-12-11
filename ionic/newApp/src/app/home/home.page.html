@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="mycolors">
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col sizeLg="4" sizeMd="4" sizeXs="6">
+          <div class="fuentetexto">
+            Texto1
+          </div>
+        </ion-col>
+        <ion-col sizeLg="4" sizeMd="4" sizeXs="6">
+          <div class="fuentetexto">
+            Texto2
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col sizeLg="4" sizeMd="4" sizeXs="9">
+          <div class="fuentetexto">
+            Texto3
+          </div>
+        </ion-col>
+        <ion-col sizeLg="4" sizeMd="4" sizeXs="3">
+          <div class="fuentetexto">
+            Texto4
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <button [routerLink]="['/customers']" class="btn">Go to customers</button>
+  </div>
+    
+</ion-content>
