@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { DatosService} from '../services/datos.service';
+import { Dato } from '../models/datos';
+
 
 @Component({
   selector: 'app-customers',
@@ -11,9 +14,17 @@ import { Router } from '@angular/router';
 
 export class CustomersPage implements OnInit {
 
-  constructor(private router: Router) { }
+  datos: Dato[] = [];
 
-  ngOnInit() {
+  constructor(private router: Router, public datosService: DatosService) { }
+
+  ngOnInit():void {
+    this.datosService.getDatos()
+    .subscribe(datos =>{
+      console.log(datos);
+      this.datos = datos;
+    }
+    , err => console.log(err))
   }
 
   goTohome(){
