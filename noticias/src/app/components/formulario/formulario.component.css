@@ -1,0 +1,16 @@
+
+.heading {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(64, 72, 95);
+    
+}
+
+.btn {
+    margin: center;
+    padding: auto;
+    font-size: 1.5rem;
+}
