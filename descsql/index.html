@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obtener información de las columnas de una tabla</title>
+</head>
+<body>
+    <h2>Obtener información de las columnas de una tabla</h2>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <label for="dbname">Nombre de la base de datos:</label>
+        <input type="text" id="dbname" name="dbname"><br><br>
+        <label for="tablename">Nombre de la tabla:</label>
+        <input type="text" id="tablename" name="tablename"><br><br>
+        <input type="submit" value="Generar CSV">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (!empty($_POST["dbname"]) && !empty($_POST["tablename"])) {
+            // Obtener datos del formulario
+            $dbname = $_POST["dbname"];
+            $tablename = $_POST["tablename"];
+
+            // Configuración de la conexión a la base de datos MySQL
+            $servername = "localhost";
+            $username = "admin";
+            $password = "admin2023";
+
+            // Crear conexión
+            $conn = new mysqli($servername, $username, $password);
+
+            // Comprobar la conexión
+            if ($conn->connect_error) {
+                die("Error de conexión: " . $conn->connect_error);
+            }
+
+            // Seleccionar la base de datos
+            $conn->select_db($dbname);
+
+            // Consulta para obtener la información de las columnas de la tabla
+            $sql = "SHOW COLUMNS FROM $tablename";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                // Crear el archivo CSV
+                $archivo_csv = fopen("$tablename.csv", "w");
+
+                // Escribir encabezados en el archivo CSV
+                fputcsv($archivo_csv, array('Field', '', 'Type'));
+
+                // Escribir filas con información de las columnas
+                while ($row = $result->fetch_assoc()) {
+                    fputcsv($archivo_csv, array($row["Field"], '', $row["Type"]));
+                }
+
+                fclose($archivo_csv);
+                echo "Información de las columnas de la tabla guardada en $tablename.csv";
+            } else {
+                echo "No se encontraron resultados para la tabla $tablename";
+            }
+
+            // Cerrar conexión
+            $conn->close();
+        } else {
+            echo "Por favor, introduzca el nombre de la base de datos y la tabla.";
+        }
+    }
+    ?>
+</body>
+</html>
