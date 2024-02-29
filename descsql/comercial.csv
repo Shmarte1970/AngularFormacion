@@ -1,0 +1,12 @@
+Field,,Type
+unique_id,,int
+ID,,int
+NOM,,char(50)
+COGNOMS,,char(100)
+TELEFON,,char(20)
+EMAIL,,char(50)
+IDUSUARI,,int
+IDUSUARICREADOR,,int
+DATACREACIO,,datetime
+IDUSUARIMODIFICADOR,,int
+DATAMODIFICACIO,,datetime

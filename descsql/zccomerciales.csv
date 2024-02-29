@@ -1,0 +1,9 @@
+Field,,Type
+idcomerciales,,"int unsigned"
+nombreComercial,,varchar(50)
+apellidosComercial,,varchar(25)
+telefonoComercial,,varchar(20)
+emailComercial,,varchar(50)
+idUsuario,,int
+nombreUsuario,,varchar(200)
+fechacreacion,,datetime

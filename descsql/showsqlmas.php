@@ -4,7 +4,8 @@
 $servername = "localhost";
 $username = "admin";
 $password = "admin2023";
-$dbname = "zarca";
+// $dbname = "covellone";
+$dbname = "pruebasnucleares";
 
 // Nombre de la tabla de la que deseas obtener la información de las columnas
 $nombreTabla = "zcempresa";
