@@ -49,10 +49,10 @@ if ($conn->connect_error) {
                                         SET $tabla_receptor.$campo_receptor = $tabla_emisora.$campo_emisor
                                         WHERE $tabla_receptor.$campo_temporal = $tabla_emisora.id";
             if ($conn->query($sql_update_emailEmpresa) === true) {
-                echo "¿El campo emailEmpresa se ha actualizado correctamente? (s/n): ";
+                echo "¿El campo $campo_receptor se ha actualizado correctamente? (s/n): ";
                 $respuesta = strtolower(trim(fgets(STDIN)));
                 if ($respuesta === 's') {
-                    echo "¿Desea borrar el campo temporal de zcempresa? (s/n): ";
+                    echo "¿Desea borrar el campo $campo_temporal de $tabla_receptor? (s/n): ";
                     $borrar_temporal = strtolower(trim(fgets(STDIN)));
                     if ($borrar_temporal === 's') {
                         // Borrar el campo temporal si el usuario lo confirma
@@ -64,7 +64,7 @@ if ($conn->connect_error) {
                             $sql_show_columns = "SHOW COLUMNS FROM $tabla_receptor";
                             $result_show_columns = $conn->query($sql_show_columns);
                             if ($result_show_columns->num_rows > 0) {
-                                echo "Columnas de la tabla $tabla_receptor después de eliminar el campo temporal:\n";
+                                echo "Columnas de la tabla $tabla_receptor después de eliminar el campo $campo_temporal:\n";
                                 while ($row = $result_show_columns->fetch_assoc()) {
                                     echo $row["Field"] . "\n";
                                 }
@@ -79,7 +79,7 @@ if ($conn->connect_error) {
                     echo "Operación finalizada\n";
                 }
             } else {
-                echo "Error al actualizar el campo emailEmpresa: " . $conn->error . "\n";
+                echo "Error al actualizar el campo $campo_receptor: " . $conn->error . "\n";
             }
         } else {
             echo "Error al actualizar el campo temporal: " . $conn->error . "\n";
