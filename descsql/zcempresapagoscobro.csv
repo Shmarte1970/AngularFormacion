@@ -1,0 +1,8 @@
+Field,,Type
+idPagosCobroEmp,,int
+idEmpresa,,int
+idFormaPago,,int
+descripcionFormaPago,,varchar(25)
+idVencimiento,,int
+descripcionVencimiento,,varchar(25)
+diaPagoArray,,int

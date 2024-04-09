@@ -1,0 +1,16 @@
+Field,,Type
+unique_id,,int
+CODIMAGATZEM,,char(4)
+IDTIPUSPRODUCTE,,int
+QUANTITAT,,"decimal(10,3)"
+LLOGAT,,"decimal(10,3)"
+RESERVAT,,"decimal(10,3)"
+VENUT,,"decimal(10,3)"
+BAIXA,,"decimal(10,3)"
+COMPRAT,,"decimal(10,3)"
+MINIM,,"decimal(10,3)"
+DATACREACIO,,datetime
+IDUSUARICREADOR,,int
+DATAMODIFICACIO,,datetime
+IDUSUARIMODIFICADOR,,int
+VERSIO,,int

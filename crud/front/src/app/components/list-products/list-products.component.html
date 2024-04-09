@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="title">
+        <h4>Listado de Productos </h4>
+        <button type="button" class="btn btn-outline-info">Agregar Producto</button>
+    </div>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Stocks</th>
+            <th scope="col">
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr *ngFor= "let item of listProducts" class="table-active">
+            <td>{{ item.name }}</td>
+            <td>{{ item.description }}</td>
+            <td>{{ item.price}}</td>
+            <td>{{ item.stock }}</td>
+            <td>
+                <button type="button" class="btn btn-outline-dark btn-sm">Edit</button>
+                <button type="button" class="btn btn-outline-danger btn-sm ms-2">Delete</button>
+            </td>
+        </tr>
+        
+        </tbody>
+      </table>
+</div>

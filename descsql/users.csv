@@ -16,4 +16,3 @@ countryId,,int
 provinceId,,int
 cityId,,int
 postcodeId,,int
-valor,,int

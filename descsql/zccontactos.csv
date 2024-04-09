@@ -1,0 +1,10 @@
+Field,,Type
+idContacto,,int
+codigoEmpresa,,int
+nombreContacto,,varchar(20)
+apellidosContacto,,varchar(20)
+phoneOneContacto,,varchar(11)
+phoneTwoContacto,,varchar(11)
+emailContacto,,varchar(25)
+anotacionesContacto,,varchar(200)
+horarioContacto,,varchar(50)

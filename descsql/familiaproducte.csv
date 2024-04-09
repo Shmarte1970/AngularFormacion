@@ -1,0 +1,8 @@
+Field,,Type
+unique_id,,int
+ID,,int
+NOM,,char(30)
+IDUSUARICREADOR,,int
+DATACREACIO,,datetime
+IDUSUARIMODIFICADOR,,int
+DATAMODIFICACIO,,datetime

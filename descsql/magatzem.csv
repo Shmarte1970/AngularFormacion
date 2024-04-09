@@ -1,0 +1,4 @@
+Field,,Type
+unique_id,,int
+CODI,,char(4)
+NOM,,char(30)

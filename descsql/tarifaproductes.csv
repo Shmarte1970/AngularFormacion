@@ -1,0 +1,14 @@
+Field,,Type
+unique_id,,int
+ID,,int
+IDTIPUSPROD,,int
+TIPUSOPE,,char(7)
+TIPUSTARIFA,,char(10)
+DIAMES,,char(1)
+MESOSLLOGUER,,int
+QUANTITAT,,int
+PREU,,"decimal(8,2)"
+IDUSUARICREADOR,,int
+DATACREACIO,,datetime
+IDUSUARIMODIFICADOR,,int
+DATAMODIFICACIO,,datetime

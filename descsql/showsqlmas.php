@@ -5,10 +5,10 @@ $servername = "localhost";
 $username = "admin";
 $password = "admin2023";
 // $dbname = "covellone";
-$dbname = "pruebasnucleares";
+$dbname = "test";
 
 // Nombre de la tabla de la que deseas obtener la información de las columnas
-$nombreTabla = "zcempresa";
+$nombreTabla = "tipusproducte";
 
 // Verificar si el archivo CSV ya existe y eliminarlo si es así
 $archivo_csv = "$nombreTabla.csv";

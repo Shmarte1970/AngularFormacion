@@ -6,14 +6,17 @@
     "@capacitor/haptics": "5.0.6",
     "@capacitor/keyboard": "5.0.6",
     "@capacitor/status-bar": "5.0.6",
+    "boostrap": "^2.0.0",
     "cordova-plugin": "^1.0.0",
     "cordova-plugin-advanced-http": "^3.3.1",
     "csv-writer": "^1.6.0",
     "express": "^4.18.2",
     "g": "^2.0.1",
+    "jquery": "^3.7.1",
     "mysql": "^2.18.1",
     "nodemon": "^3.0.1",
-    "picocolors": "^1.0.0"
+    "picocolors": "^1.0.0",
+    "popper": "^1.0.1"
   },
   "devDependencies": {
     "@capacitor/cli": "5.5.1"

@@ -1,0 +1,8 @@
+Field,,Type
+id,,int
+descripcionFormaPago,,varchar(25)
+oldDescripcionFormaPago,,varchar(25)
+descripcionVencimiento,,varchar(25)
+oldDescripcionVencimiento,,varchar(25)
+diaPagoArray,,int
+oldDiaPagoArray,,int
