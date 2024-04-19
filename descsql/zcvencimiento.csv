@@ -1,0 +1,4 @@
+Field,,Type
+idVencimiento,,int
+diavencimiento,,int
+descVencimiento,,varchar(25)

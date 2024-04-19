@@ -1,0 +1,3 @@
+Field,,Type
+idFormasDePago,,int
+descripcionPagoCobro,,varchar(25)

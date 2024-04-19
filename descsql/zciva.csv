@@ -1,0 +1,4 @@
+Field,,Type
+idIva,,int
+leyendaiva,,varchar(15)
+tipoiva,,"float(4,2)"
